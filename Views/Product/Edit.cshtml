@@ -1,8 +1,8 @@
 ﻿@using ShoppintList.Models.Product
-@model ProductFormModel 
+@model ProductFormModel
 
 @{
-	ViewBag.Title = "Add product";
+	ViewBag.Title = "Edit product";
 }
 
 <h2 class="text-center">@ViewBag.Title</h2>
@@ -13,10 +13,10 @@
 		<div class="form-group">
 			<div class="mb-3">
 				<label asp-for="Name"></label>
-				<input asp-for="Name" class="form-control" placeholder="Write your product here..."/>
+				<input asp-for="Name" class="form-control" placeholder="Write your product here..." />
 				<span asp-validation-for="Name" class="small text-danger"></span>
 			</div>
 		</div>
-		<input class="btn btn-primary mt-3" type="submit" value="Create"/>
+		<input class="btn btn-primary mt-3" type="submit" value="Edit" />
 	</form>
 </div>
